@@ -1,6 +1,6 @@
 # BikeVision
 
-![BikeVision demo](demo_image.jpg)
+<img src="demo_image.jpg" width="480" alt="BikeVision demo">
 
 A sample iOS app that uses the [QuickPose SDK](https://quickpose.ai) to measure cycling biomechanics from a live camera feed or an uploaded video. It is published as a starting point for developers building their own bike-fit and biomechanics tools.
 
