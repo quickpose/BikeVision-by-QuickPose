@@ -1,5 +1,7 @@
 # BikeVision
 
+![BikeVision demo](demo_image.jpg)
+
 A sample iOS app that uses the [QuickPose SDK](https://quickpose.ai) to measure cycling biomechanics from a live camera feed or an uploaded video. It is published as a starting point for developers building their own bike-fit and biomechanics tools.
 
 ## What it does
@@ -134,10 +136,6 @@ static let bikeStyle = QuickPose.Style(
 
 `BikeSession` is a plain Swift struct — drop it into CoreData, SwiftData, or write the annotated video URL to a persistent store to build a session history screen.
 
-### Add thresholds / feedback
-
-QuickPose supports `QuickPoseThresholdView` and per-feature feedback strings. Wire these into `LiveCameraView` to give real-time fit cues (e.g. "Knee angle too low").
-
 ---
 
 ## QuickPose SDK packages used
@@ -164,6 +162,6 @@ The following keys are set in the project build settings and appear in the gener
 
 ## License
 
-MIT. See [LICENSE](LICENSE) for details.
+Apache 2.0. See [LICENSE](LICENSE) for details.
 
 This sample app is provided by [QuickPose](https://quickpose.ai) to help developers build sports and fitness applications. It is not intended as production-ready bike-fit software.
