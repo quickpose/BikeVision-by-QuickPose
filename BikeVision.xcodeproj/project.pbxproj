@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6CB19CAE2F62F79D0011AEC5 /* QuickPoseCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 6CB19CAD2F62F79D0011AEC5 /* QuickPoseCamera */; };
+		6CB19CB02F62F79D0011AEC5 /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CB19CAF2F62F79D0011AEC5 /* QuickPoseCore */; };
+		6CB19CB22F62F79D0011AEC5 /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = 6CB19CB12F62F79D0011AEC5 /* QuickPoseMP */; };
+		6CB19CB42F62F79D0011AEC5 /* QuickPoseSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6CB19CB32F62F79D0011AEC5 /* QuickPoseSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6CB19C992F62F4E90011AEC5 /* BikeVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB19CB02F62F79D0011AEC5 /* QuickPoseCore in Frameworks */,
+				6CB19CB22F62F79D0011AEC5 /* QuickPoseMP in Frameworks */,
+				6CB19CAE2F62F79D0011AEC5 /* QuickPoseCamera in Frameworks */,
+				6CB19CB42F62F79D0011AEC5 /* QuickPoseSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = BikeVision;
 			packageProductDependencies = (
+				6CB19CAD2F62F79D0011AEC5 /* QuickPoseCamera */,
+				6CB19CAF2F62F79D0011AEC5 /* QuickPoseCore */,
+				6CB19CB12F62F79D0011AEC5 /* QuickPoseMP */,
+				6CB19CB32F62F79D0011AEC5 /* QuickPoseSwiftUI */,
 			);
 			productName = BikeVision;
 			productReference = 6CB19C992F62F4E90011AEC5 /* BikeVision.app */;
@@ -94,6 +109,9 @@
 			);
 			mainGroup = 6CB19C902F62F4E90011AEC5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6CB19CAC2F62F79D0011AEC5 /* XCRemoteSwiftPackageReference "quickpose-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6CB19C9A2F62F4E90011AEC5 /* Products */;
 			projectDirPath = "";
@@ -256,11 +274,14 @@
 				DEVELOPMENT_TEAM = 22W63VGZT5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "BikeVision needs camera access to record your cycling session for biomechanics analysis.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BikeVision needs access to your photo library so you can select a cycling video to analyse.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,12 +290,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.quickpose.BikeVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,11 +313,14 @@
 				DEVELOPMENT_TEAM = 22W63VGZT5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "BikeVision needs camera access to record your cycling session for biomechanics analysis.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BikeVision needs access to your photo library so you can select a cycling video to analyse.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +329,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ai.quickpose.BikeVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +364,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CB19CAC2F62F79D0011AEC5 /* XCRemoteSwiftPackageReference "quickpose-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quickpose/quickpose-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CB19CAD2F62F79D0011AEC5 /* QuickPoseCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CB19CAC2F62F79D0011AEC5 /* XCRemoteSwiftPackageReference "quickpose-ios-sdk" */;
+			productName = QuickPoseCamera;
+		};
+		6CB19CAF2F62F79D0011AEC5 /* QuickPoseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CB19CAC2F62F79D0011AEC5 /* XCRemoteSwiftPackageReference "quickpose-ios-sdk" */;
+			productName = QuickPoseCore;
+		};
+		6CB19CB12F62F79D0011AEC5 /* QuickPoseMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CB19CAC2F62F79D0011AEC5 /* XCRemoteSwiftPackageReference "quickpose-ios-sdk" */;
+			productName = QuickPoseMP;
+		};
+		6CB19CB32F62F79D0011AEC5 /* QuickPoseSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CB19CAC2F62F79D0011AEC5 /* XCRemoteSwiftPackageReference "quickpose-ios-sdk" */;
+			productName = QuickPoseSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CB19C912F62F4E90011AEC5 /* Project object */;
 }

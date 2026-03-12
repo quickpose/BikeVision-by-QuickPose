@@ -1,21 +1,16 @@
+// BikeVisionApp.swift
+// BikeVision
 //
-//  BikeVisionApp.swift
-//  BikeVision
-//
-//  Created by Filip Ljubicic on 12/03/2026.
-//
+// Sample app entry point — no persistent store required.
+// All session data is held in-memory and forwarded between views.
 
 import SwiftUI
-import CoreData
 
 @main
 struct BikeVisionApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
